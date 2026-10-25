@@ -1,0 +1,21 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.env
+
+# 运行时数据一律不进仓库（里面是真实对话原文和会话 ID）
+data/
+data_dir/
+*.bak-*.json
+l1.json
+l2.json
+l3.json
+state.json
+archive/
+
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
