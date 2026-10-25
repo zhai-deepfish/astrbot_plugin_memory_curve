@@ -1,0 +1,52 @@
+{
+  "enabled": {
+    "description": "总开关",
+    "type": "bool",
+    "default": true
+  },
+  "data_dir": {
+    "description": "记忆数据目录（留空则用 data/plugin_data/astrbot_plugin_memory_curve）",
+    "type": "string",
+    "default": ""
+  },
+  "judge_provider_id": {
+    "description": "做判定和摘要的便宜模型（留空则用当前会话的主模型）",
+    "type": "string",
+    "default": ""
+  },
+  "l1_max_turns": {
+    "description": "L1 保留最近几轮原文",
+    "type": "int",
+    "default": 10
+  },
+  "l2_expire_hours": {
+    "description": "L2 摘要保留小时数",
+    "type": "int",
+    "default": 24
+  },
+  "l3_expire_days": {
+    "description": "L3 事实保留天数（未被提及则下架）",
+    "type": "int",
+    "default": 30
+  },
+  "l3_max_items": {
+    "description": "注入的 L3 事实上限",
+    "type": "int",
+    "default": 20
+  },
+  "l2_max_items": {
+    "description": "注入的 L2 摘要上限",
+    "type": "int",
+    "default": 10
+  },
+  "retrieve_limit": {
+    "description": "每轮最多召回几条旧片段",
+    "type": "int",
+    "default": 3
+  },
+  "enable_judge": {
+    "description": "是否每轮调用便宜模型判定（关掉则只按规则存）",
+    "type": "bool",
+    "default": true
+  }
+}
